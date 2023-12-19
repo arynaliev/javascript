@@ -56,3 +56,23 @@ const oddIndex = (array) => {
   });
 };
 oddIndex(arrOfDigits);
+
+const myTxt = "Hello World";
+const setOfLetters = (txt) => {
+  let mySet = new Set(txt.split(""));
+  return mySet;
+};
+console.log(setOfLetters(myTxt));
+
+const countLetters = (word) => {
+  let newObj = {};
+  for (let item of word.split(" ").join("").split("")) {
+    if (!newObj[item]) {
+      newObj[item] = 1;
+    } else {
+      newObj[item]++;
+    }
+  }
+  return newObj;
+};
+console.log(countLetters(myTxt));
