@@ -7,7 +7,18 @@
    <title>Document</title>
 </head>
 <body>
-   <h1>Hello World!</h1>
+   <div class="container">
+      <div class="input-btn">
+         <input id="nameInput" name="name" type="text" onchange="onChangeHandler(event)"/>
+         <button id="revealBtn" onclick="getGender()">Reveal</button>
+      </div>
+      <div class="input-btn">
+         <h1 id="nameOutput"></h1>
+         <img id="img"></img>
+         <span id="percentage"></span>
+      </div>
+   </div>
+
 
    <script src="script.js"></script>
 </body>

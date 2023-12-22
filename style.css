@@ -1,7 +1,23 @@
 body {
-  background-color: azure;
+  background-image: linear-gradient(to right, blue, pink);
 }
 
-h1::after {
-  content: "⭐️";
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
+
+#nameInput,
+#revealBtn {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+/* .input-btn {
+  height: 50px;
+} */
